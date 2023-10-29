@@ -1,0 +1,10 @@
+[15-Aug-2023 13:14:24 Europe/Berlin] PHP Warning:  Undefined array key "select" in C:\xampp\htdocs\sistema-php\api-marketplace\routes\route.php on line 431
+[15-Aug-2023 13:14:24 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM favicon.ico' at line 1 in C:\xampp\htdocs\sistema-php\api-marketplace\models\get.model.php:27
+Stack trace:
+#0 C:\xampp\htdocs\sistema-php\api-marketplace\models\get.model.php(27): PDOStatement->execute()
+#1 C:\xampp\htdocs\sistema-php\api-marketplace\controllers\get.controller.php(11): GetModel::getData('favicon.ico', NULL, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\sistema-php\api-marketplace\routes\route.php(431): GetController->getData('favicon.ico', NULL, NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\sistema-php\api-marketplace\controllers\route.controller.php(11): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\sistema-php\api-marketplace\index.php(33): RoutesController->index()
+#5 {main}
+  thrown in C:\xampp\htdocs\sistema-php\api-marketplace\models\get.model.php on line 27
